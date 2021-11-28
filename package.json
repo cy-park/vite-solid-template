@@ -1,0 +1,36 @@
+{
+  "name": "vite-solid-template",
+  "version": "0.0.0",
+  "description": "Vite + SolidJS PWA Template",
+  "author": {
+    "name": "Chan Young Park"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "npm run prod && npm run sw",
+    "prod": "vite build --mode production",
+    "serve": "vite preview",
+    "sw": "node workbox-config.js",
+    "format": "prettier --write \"src/**/*.{ts,js,tsx,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{ts,js,tsx,jsx}\""
+  },
+  "engines": {
+    "node": "^16.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.0",
+    "vite": "^2.6.14",
+    "vite-plugin-solid": "^2.1.2",
+    "vite-plugin-windicss": "^1.5.3",
+    "workbox-build": "^6.4.1"
+  },
+  "dependencies": {
+    "@urql/core": "^2.3.5",
+    "graphql-request": "^3.6.1",
+    "redaxios": "^0.4.1",
+    "solid-app-router": "^0.1.13",
+    "solid-js": "^1.2.5"
+  }
+}
